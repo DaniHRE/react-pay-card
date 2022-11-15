@@ -5,7 +5,7 @@ import {
     TransitionGroup,
     SwitchTransition
 } from 'react-transition-group';
-import './styles.scss';
+import './styles.css';
 
 const CARDS = {
     visa: '^4',
@@ -56,7 +56,8 @@ const Card = ({
     const cardType = (cardNumber: string) => {
         const number = cardNumber;
         let re;
-        for (const [card, pattern] of Object.entries(CARDS)) {
+        for (const card of Object.keys(CARDS)) {
+            const pattern = CARDS[card as keyof typeof CARDS];
             re = new RegExp(pattern);
             if (number.match(re) != null) {
                 return card;
