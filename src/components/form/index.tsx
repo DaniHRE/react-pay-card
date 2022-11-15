@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useRef, LegacyRef } from 'react';
-import './styles.scss';
+import './styles.css';
 
 const currentYear = new Date().getFullYear();
 const monthsArr = Array.from({ length: 12 }, (x, i) => {
