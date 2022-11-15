@@ -22,7 +22,7 @@ interface CFormProps {
     children: any,
 }
 
-export default function CForm({
+export default function Form({
     cardMonth,
     cardYear,
     onUpdateState,

@@ -1,6 +1,6 @@
 import React, { useState, useRef, useCallback } from 'react';
-import CForm from '../form';
-import Card from '../card';
+import Form from '../Form';
+import Card from '../Card';
 
 interface IinitialState {
     cardNumber: string,
@@ -20,7 +20,7 @@ const initialState: IinitialState = {
     isCardFlipped: false,
 };
 
-const MainScreen = () => {
+const SimpleFormCard = () => {
     const [state, setState] = useState<IinitialState>(initialState);
     const [currentFocusedElm, setCurrentFocusedElm] = useState<React.RefObject<HTMLLabelElement> | null>(null);
 
@@ -60,7 +60,7 @@ const MainScreen = () => {
 
     return (
         <div className="wrapper">
-            <CForm
+            <Form
                 cardMonth={state.cardMonth}
                 cardYear={state.cardYear}
                 onUpdateState={updateStateValues}
@@ -84,9 +84,9 @@ const MainScreen = () => {
                         cardHolderRef={cardElementsRef.cardHolder}
                         cardDateRef={cardElementsRef.cardDate}
                     ></Card>
-            </CForm>
+            </Form>
         </div>
     );
 };
 
-export default MainScreen;
+export default SimpleFormCard;
