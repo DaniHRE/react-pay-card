@@ -11,7 +11,7 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-card-bank": "C:\\Users\\Henrique\\Desktop\\Projetos\\react-card-bank\\lib"
+    "react-card-bank": "../../react-card-bank/lib"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",
