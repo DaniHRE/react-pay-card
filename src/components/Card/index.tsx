@@ -5,6 +5,7 @@ import {
     TransitionGroup,
     SwitchTransition
 } from 'react-transition-group';
+import { checkCard } from '../../utils/checkCard';
 import './styles.css';
 
 const CARDS = {
@@ -13,7 +14,6 @@ const CARDS = {
     mastercard: '^5[1-5]',
     discover: '^6011',
     unionpay: '^62',
-    troy: '^9792',
     diners: '^(30[0-5]|36)'
 };
 
@@ -60,11 +60,13 @@ const Card = ({
             const pattern = CARDS[card as keyof typeof CARDS];
             re = new RegExp(pattern);
             if (number.match(re) != null) {
-                return card;
+                const nCard = checkCard(card);
+                console.log(nCard);
+                return nCard;
             }
         }
 
-        return 'dino'; // default card types
+        return 'dino';
     };
 
     const useCardType = useMemo(() => {
@@ -125,11 +127,9 @@ const Card = ({
                             className="card-item__chip"
                         />
                         <div className="card-item__type">
-                            <img
-                                alt={useCardType}
-                                src={`/card-type/${useCardType}.png`}
-                                className="card-item__typeImg"
-                            />
+                            <div className="card-item__typeImg">
+                                {useCardType}
+                            </div>
                         </div>
                     </div>
 
@@ -274,7 +274,6 @@ const Card = ({
                     </div>
                     <div className="card-item__type">
                         <img
-                            alt={useCardType}
                             src={`/card-type/${useCardType}.png`}
                             className="card-item__typeImg"
                         />
