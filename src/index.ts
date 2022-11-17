@@ -1,5 +1,5 @@
-import card from './components/Card';
-import form from './components/Form';
-import FormCard from './components/SimpleFormCard';
+import Card from './components/Card';
+import Form from './components/Form';
+import SimpleFormCard from './components/SimpleFormCard';
 
-export { card, form, FormCard };
+export { Card, Form, SimpleFormCard };
