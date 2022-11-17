@@ -1,4 +1,4 @@
-import Card from 'react-card-bank/lib/components/Card';
+import { Card } from 'react-card-bank';
 
 function App() {
 
