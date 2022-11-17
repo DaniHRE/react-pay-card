@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "./lib",
+    "outDir": "lib",
     "jsx": "react",
     "target": "es6",
     "module": "ESNext",
@@ -17,7 +17,12 @@
       "node_modules/@types"
     ]
   },
+  "include": [
+    "src"
+  ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "example/*",
+    "example"
   ]
 }
