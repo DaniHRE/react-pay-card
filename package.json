@@ -1,6 +1,7 @@
 {
   "name": "react-bank-card",
-  "private": true,
+  "private": false,
+  "description": "Card Bank made with React + Typescript + Scss.",
   "version": "1.0.0",
   "typings": "lib/index.d.ts",
   "files": [
