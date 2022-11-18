@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { useState, useEffect, useMemo, LegacyRef } from 'react';
 import {
     CSSTransition,
     TransitionGroup,
     SwitchTransition
 } from 'react-transition-group';
+import { Dino } from '../../badges/dino';
 import { checkCard } from '../../utils/checkCard';
 import './styles.css';
 
@@ -30,8 +31,8 @@ interface CardProps {
     cardMonth: string,
     cardYear: string,
     cardCvv: string,
-    isCardFlipped: boolean,
-    onUpdateState: (keyName: any, value: any) => void,
+    // isCardFlipped: boolean,
+    // onUpdateState: (keyName: any, value: any) => void,
     currentFocusedElm?: null | any,
     cardNumberRef?: LegacyRef<HTMLLabelElement> | undefined,
     cardHolderRef?: LegacyRef<HTMLLabelElement> | undefined,
@@ -44,14 +45,15 @@ const Card = ({
     cardMonth,
     cardYear,
     cardCvv,
-    isCardFlipped,
-    onUpdateState,
+    // isCardFlipped,
+    // onUpdateState,
     currentFocusedElm,
     cardNumberRef,
     cardHolderRef,
     cardDateRef,
 }: CardProps) => {
     const [style, setStyle] = useState<any>();
+    const [isCardFlipped, setIsCardFlipped] = useState(false);
 
     const cardType = (cardNumber: string) => {
         const number = cardNumber;
@@ -61,12 +63,11 @@ const Card = ({
             re = new RegExp(pattern);
             if (number.match(re) != null) {
                 const nCard = checkCard(card);
-                console.log(nCard);
                 return nCard;
             }
         }
 
-        return 'dino';
+        return <Dino />;
     };
 
     const useCardType = useMemo(() => {
@@ -104,7 +105,10 @@ const Card = ({
     };
 
     return (
-        <div className={'card-item ' + (isCardFlipped ? '-active' : '')} onClick={() => { onUpdateState('isCardFlipped', !isCardFlipped); }}>
+        <div className={'card-item ' + (isCardFlipped ? '-active' : '')} onClick={() => {
+            // onUpdateState('isCardFlipped', !isCardFlipped);
+            setIsCardFlipped(!isCardFlipped);
+        }}>
             <div className="card-item__side -front">
                 <div
                     className={`card-item__focus ${currentFocusedElm ? `-active` : ``
@@ -273,10 +277,9 @@ const Card = ({
                         </TransitionGroup>
                     </div>
                     <div className="card-item__type">
-                        <img
-                            src={`/card-type/${useCardType}.png`}
-                            className="card-item__typeImg"
-                        />
+                        <div className="card-item__typeImgCover">
+                            {useCardType}
+                        </div>
                     </div>
                 </div>
             </div>
