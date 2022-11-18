@@ -7,7 +7,8 @@ import {
 } from 'react-transition-group';
 import { Dino } from '../../badges/dino';
 import { checkCard } from '../../utils/checkCard';
-import { data } from '../../utils/shuffleBackground';
+import { shuffleBackground } from '../../utils/shuffleBackground';
+import chip from '../../assets/icons/chip.png';
 import './styles.css';
 
 const CARDS = {
@@ -24,7 +25,7 @@ const cardBackgroundName = () => {
     return `${random}.jpeg`;
 };
 
-const BACKGROUND_IMG = cardBackgroundName();
+const BACKGROUND_IMG = shuffleBackground();
 
 interface CardProps {
     cardHolder: string,
@@ -119,7 +120,7 @@ const Card = ({
                 <div className="card-item__cover">
                     <img
                         alt=""
-                        src={`${data}`}
+                        src={BACKGROUND_IMG}
                         className="card-item__bg"
                     />
                 </div>
@@ -127,7 +128,7 @@ const Card = ({
                 <div className="card-item__wrapper">
                     <div className="card-item__top">
                         <img
-                            src={'icons/chip.png'}
+                            src={chip}
                             alt=""
                             className="card-item__chip"
                         />
@@ -257,7 +258,7 @@ const Card = ({
                 <div className="card-item__cover">
                     <img
                         alt=""
-                        src={`/card-background/${BACKGROUND_IMG}`}
+                        src={BACKGROUND_IMG}
                         className="card-item__bg"
                     />
                 </div>
