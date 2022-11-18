@@ -177,6 +177,15 @@
 
     &__typeImg {
         max-width: 100%;
+        width: 80%;
+        object-fit: contain;
+        max-height: 100%;
+        object-position: top right;
+    }
+
+    &__typeImgCover {
+        max-width: 100%;
+        width: 60%;
         object-fit: contain;
         max-height: 100%;
         object-position: top right;
@@ -184,7 +193,6 @@
 
     &__info {
         color: #fff;
-        width: 100%;
         max-width: calc(100% - 85px);
         padding: 10px 15px;
         font-weight: 500;
