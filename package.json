@@ -8,9 +8,10 @@
   ],
   "scripts": {
     "clean": "rm -rf lib",
-    "build": "npm run clean && tsc && cp package.json README.md ./lib && sass ./src/:lib/"
+    "build": "npm run clean && tsc && cp package.json README.md ./lib && sass ./src/:lib/ && cp -r src/assets/ ./lib"
   },
   "dependencies": {
+    "@types/node": "^18.11.9",
     "node-sass": "^8.0.0",
     "react-transition-group": "^4.4.5",
     "sass": "^1.56.1"

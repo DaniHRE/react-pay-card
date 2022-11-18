@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React from 'react';
 import { useState, useEffect, useMemo, LegacyRef } from 'react';
 import {
     CSSTransition,
@@ -7,6 +7,7 @@ import {
 } from 'react-transition-group';
 import { Dino } from '../../badges/dino';
 import { checkCard } from '../../utils/checkCard';
+import { data } from '../../utils/shuffleBackground';
 import './styles.css';
 
 const CARDS = {
@@ -118,7 +119,7 @@ const Card = ({
                 <div className="card-item__cover">
                     <img
                         alt=""
-                        src={`/card-background/${BACKGROUND_IMG}`}
+                        src={`${data}`}
                         className="card-item__bg"
                     />
                 </div>

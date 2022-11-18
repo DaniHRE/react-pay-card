@@ -77,8 +77,8 @@ const SimpleFormCard = () => {
                         cardMonth={state.cardMonth}
                         cardYear={state.cardYear}
                         cardCvv={state.cardCvv}
-                        isCardFlipped={state.isCardFlipped}
-                        onUpdateState={updateStateValues}
+                        // isCardFlipped={state.isCardFlipped}
+                        // onUpdateState={updateStateValues}
                         currentFocusedElm={currentFocusedElm}
                         cardNumberRef={cardElementsRef.cardNumber}
                         cardHolderRef={cardElementsRef.cardHolder}

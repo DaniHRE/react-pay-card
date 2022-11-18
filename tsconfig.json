@@ -17,6 +17,9 @@
       "node_modules/@types"
     ]
   },
+  "files": [
+    "src/typings/image.d.ts"
+  ],
   "include": [
     "src"
   ],
