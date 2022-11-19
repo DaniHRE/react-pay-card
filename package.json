@@ -2,7 +2,8 @@
   "name": "react-pay-card",
   "private": false,
   "description": "Card Bank made with React + Typescript + Scss.",
-  "version": "1.0.2",
+  "version": "1.0.6",
+  "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "repository": {
     "url": "https://github.com/DaniHRE/react-pay-card"
