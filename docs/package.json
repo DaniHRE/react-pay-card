@@ -13,7 +13,7 @@
     "@types/node": "^18.11.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-pay-card": "/workspace/react-card-bank/lib/index.js"
+    "react-pay-card": "^1.0.8"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",
