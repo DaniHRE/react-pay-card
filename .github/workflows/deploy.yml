@@ -6,10 +6,6 @@ on:
       - main
 
 jobs:
-  enterDirectory:
-    name: Enter Directory
-    runs-on: ubuntu-latest
-
   build:
     name: Build
     runs-on: ubuntu-latest
