@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "@types/node": "^18.11.9",
+    "react-pay-card-example": "file:docs",
     "react-transition-group": "^4.4.5",
     "sass": "^1.56.1"
   },
