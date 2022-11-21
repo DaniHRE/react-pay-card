@@ -10,6 +10,10 @@ jobs:
     name: Enter Directory
     runs-on: ubuntu-latest
 
+    steps:
+      - name: Cd cmd
+        run: cd docs/
+
   build:
     name: Build
     runs-on: ubuntu-latest
@@ -26,11 +30,8 @@ jobs:
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
 
-      - name: Cd cmd
-        run: cd docs/
-
       - name: Build project
-        run: npm run build
+        run: npm run build:docs
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
