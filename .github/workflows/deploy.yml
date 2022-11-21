@@ -6,6 +6,10 @@ on:
       - main
 
 jobs:
+  enterDirectory:
+    name: Enter Directory
+    runs-on: ubuntu-latest
+
   build:
     name: Build
     runs-on: ubuntu-latest
@@ -22,14 +26,17 @@ jobs:
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
 
+      - name: Cd cmd
+        run: cd docs/
+
       - name: Build project
-        run: npm run build:docs
+        run: npm run build
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
         with:
           name: production-files
-          path: ./docs/dist
+          path: ./docs/
 
   deploy:
     name: Deploy
@@ -42,10 +49,10 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: production-files
-          path: ./docs/dist
+          path: ./docs/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/dist
+          publish_dir: ./docs/
