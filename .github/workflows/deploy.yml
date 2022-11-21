@@ -22,9 +22,6 @@ jobs:
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
 
-      - name: Enter Docs Folder
-      - run: cd docs/
-
       - name: Build project
         run: npm run build
 

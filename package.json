@@ -13,7 +13,8 @@
   ],
   "scripts": {
     "clean": "rm -rf lib",
-    "build": "npm run clean && tsc && cp package.json README.md ./lib && sass ./src/:lib/ && cp -r src/assets/ ./lib"
+    "build": "npm run clean && tsc && cp package.json README.md ./lib && sass ./src/:lib/ && cp -r src/assets/ ./lib",
+    "build:docs": "cd docs/ && npm run build"
   },
   "dependencies": {
     "@types/node": "^18.11.9",
