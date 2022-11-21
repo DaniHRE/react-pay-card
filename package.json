@@ -17,7 +17,6 @@
   },
   "dependencies": {
     "@types/node": "^18.11.9",
-    "node-sass": "^8.0.0",
     "react-transition-group": "^4.4.5",
     "sass": "^1.56.1"
   },
