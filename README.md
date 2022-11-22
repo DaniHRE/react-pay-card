@@ -56,7 +56,7 @@ $ npm start
 
 ## Example
 
-### *Card Component*
+### Card Component
 
 ```js
 <Card
@@ -68,12 +68,21 @@ $ npm start
 />
 ```
 
-### *Simple Form Card*
+### Simple Form Card
 
 ```js
 <SimpleFormCard />
 ```
 
+## Props
+
+| Props    | Example             | Description       |
+|----------|---------------------|-------------------|
+|cardHolder| JOHN DOE            | Card Owner Name   |
+|cardNumber| 0000 0000 0000 0000 | Card Number       |
+|cardMonth | 10                  | Card Month Expire |
+|cardYear  | 2022                | Card Year Expire  |
+|cardCVV   | 000                 | Card CVV Number   |
 
 ## Download
 
