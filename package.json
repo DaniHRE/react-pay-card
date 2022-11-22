@@ -2,8 +2,7 @@
   "name": "react-pay-card",
   "private": false,
   "description": "Card Bank made with React + Typescript + Scss.",
-  "version": "1.0.8",
-  "main": "lib/index.js",
+  "version": "1.0.9",
   "typings": "lib/index.d.ts",
   "homepage": "http://danihre.github.io/react-pay-card",
   "repository": {
@@ -19,7 +18,6 @@
   },
   "dependencies": {
     "@types/node": "^18.11.9",
-    "react-pay-card-example": "file:docs",
     "react-transition-group": "^4.4.5",
     "sass": "^1.56.1"
   },
