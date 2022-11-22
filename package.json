@@ -9,6 +9,11 @@
   "repository": {
     "url": "https://github.com/DaniHRE/react-pay-card"
   },
+  "bugs": {
+    "url" : "https://github.com/DaniHRE/react-pay-card/issues",
+    "email" : "henriqueevaldo@outlook.com"
+  },
+  "license": "ISC",
   "files": [
     "lib"
   ],
