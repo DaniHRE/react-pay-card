@@ -27,13 +27,15 @@ const cardBackgroundName = () => {
 
 const BACKGROUND_IMG = shuffleBackground();
 
-interface CardProps {
+export interface CardProps {
     cardHolder: string,
     cardNumber: string,
     cardMonth: string,
     cardYear: string,
     cardCvv: string,
-    // defaultIcon?: string,
+    chipIcon?: string,
+    brandIcon?: string,
+    backgroundImage?: string,
     currentFocusedElm?: null | any,
     cardNumberRef?: LegacyRef<HTMLLabelElement> | undefined,
     cardHolderRef?: LegacyRef<HTMLLabelElement> | undefined,
@@ -46,7 +48,9 @@ const Card = ({
     cardMonth,
     cardYear,
     cardCvv,
-    // defaultIcon,
+    chipIcon,
+    brandIcon,
+    backgroundImage,
     currentFocusedElm,
     cardNumberRef,
     cardHolderRef,
@@ -117,7 +121,7 @@ const Card = ({
                 <div className="card-item__cover">
                     <img
                         alt=""
-                        src={BACKGROUND_IMG}
+                        src={!backgroundImage ? BACKGROUND_IMG : backgroundImage}
                         className="card-item__bg"
                     />
                 </div>
@@ -125,14 +129,13 @@ const Card = ({
                 <div className="card-item__wrapper">
                     <div className="card-item__top">
                         <img
-                            // src={!defaultIcon ? chip : defaultIcon}
-                            src={chip}
+                            src={!chipIcon ? chip : chipIcon}
                             alt=""
                             className="card-item__chip"
                         />
                         <div className="card-item__type">
                             <div className="card-item__typeImg">
-                                {useCardType}
+                                {!brandIcon ? useCardType : brandIcon}
                             </div>
                         </div>
                     </div>
@@ -256,7 +259,7 @@ const Card = ({
                 <div className="card-item__cover">
                     <img
                         alt=""
-                        src={BACKGROUND_IMG}
+                        src={!backgroundImage ? BACKGROUND_IMG : backgroundImage}
                         className="card-item__bg"
                     />
                 </div>
@@ -278,7 +281,7 @@ const Card = ({
                     </div>
                     <div className="card-item__type">
                         <div className="card-item__typeImgCover">
-                            {useCardType}
+                            {!brandIcon ? useCardType : brandIcon}
                         </div>
                     </div>
                 </div>

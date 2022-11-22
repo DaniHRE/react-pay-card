@@ -9,7 +9,7 @@ const monthsArr = Array.from({ length: 12 }, (x, i) => {
 });
 const yearsArr = Array.from({ length: 9 }, (_x, i) => currentYear + i);
 
-interface CFormProps {
+export interface CFormProps {
     cardMonth: string,
     cardYear: string,
     onUpdateState: (keyName: any, value: any) => void,
