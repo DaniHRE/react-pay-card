@@ -54,6 +54,27 @@ $ npm install
 $ npm start
 ```
 
+## Example
+
+### *Card Component*
+
+```js
+<Card
+  cardHolder={'JOHN DOE'}
+  cardNumber={'5037 0854 0525 5006'}
+  cardMonth={'10'}
+  cardYear={'2022'}
+  cardCvv={'000'}
+/>
+```
+
+### *Simple Form Card*
+
+```js
+<SimpleFormCard />
+```
+
+
 ## Download
 
 You can [download](https://www.npmjs.com/package/react-pay-card) the latest release package.
