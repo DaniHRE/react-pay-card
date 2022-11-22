@@ -33,8 +33,7 @@ interface CardProps {
     cardMonth: string,
     cardYear: string,
     cardCvv: string,
-    // isCardFlipped: boolean,
-    // onUpdateState: (keyName: any, value: any) => void,
+    // defaultIcon?: string,
     currentFocusedElm?: null | any,
     cardNumberRef?: LegacyRef<HTMLLabelElement> | undefined,
     cardHolderRef?: LegacyRef<HTMLLabelElement> | undefined,
@@ -47,8 +46,7 @@ const Card = ({
     cardMonth,
     cardYear,
     cardCvv,
-    // isCardFlipped,
-    // onUpdateState,
+    // defaultIcon,
     currentFocusedElm,
     cardNumberRef,
     cardHolderRef,
@@ -108,7 +106,6 @@ const Card = ({
 
     return (
         <div className={'card-item ' + (isCardFlipped ? '-active' : '')} onClick={() => {
-            // onUpdateState('isCardFlipped', !isCardFlipped);
             setIsCardFlipped(!isCardFlipped);
         }}>
             <div className="card-item__side -front">
@@ -128,6 +125,7 @@ const Card = ({
                 <div className="card-item__wrapper">
                     <div className="card-item__top">
                         <img
+                            // src={!defaultIcon ? chip : defaultIcon}
                             src={chip}
                             alt=""
                             className="card-item__chip"
