@@ -3,6 +3,7 @@
   "private": false,
   "description": "Card Bank made with React + Typescript + Scss.",
   "version": "1.0.9",
+  "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "homepage": "http://danihre.github.io/react-pay-card",
   "repository": {
