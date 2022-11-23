@@ -1,9 +1,11 @@
 name: Deploy
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
+    inputs:
+      release-type:
+        description: 'Deploy to Github Pages. 👌'
+        required: false
 
 jobs:
   build:
