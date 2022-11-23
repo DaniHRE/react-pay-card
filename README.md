@@ -66,20 +66,29 @@ $ npm start
   cardCvv={'000'}
 />
 ```
+<div style="">
+  <div style="width: 80%">
+    <img src="./images/card.png" />
+  </div>
+</div> <br>
 
 <details>
 <summary> With change asset props </summary>
 <!--                                  -->
 
 ```js
+import chip from './images/chipIcon.svg';
+import brand from './images/brandIcon.svg';
+import background from './images/background.png';
+
 <Card
-  chipIcon={/* SVG Icon*/}
-  brandIcon={/* SVG Icon*/}
-  backgroundImage={/*PNG, JPEG, etc...*/}
+  chipIcon={chip} /* SVG Icon*/
+  brandIcon={brand} /* SVG Icon*/
+  backgroundImage={background} /*PNG, JPEG, etc...*/
 />
 ```
 
-![Card with change asset props](./images/card.jpg)
+NEED EXAMPLE IMAGE
 
 </details>
 
@@ -88,20 +97,25 @@ $ npm start
 OBS: Simple Form Card don't have props now. i'll fix it later.
 
 ```js
+import { SimpleFormCard } from 'react-pay-card';
+
 <SimpleFormCard />
 ```
 
-![](./images/SimpleFormCard.jpg)
+![SimpleFormCard](./images/SimpleFormCard.png)<br>
 
 ## Props
 
-| Props    | Example             | Description       |
-|----------|---------------------|-------------------|
-|cardHolder| JOHN DOE            | Card Owner Name   |
-|cardNumber| 0000 0000 0000 0000 | Card Number       |
-|cardMonth | 10                  | Card Month Expire |
-|cardYear  | 2022                | Card Year Expire  |
-|cardCVV   | 000                 | Card CVV Number   |
+| Props        | Example             | Description    |
+|--------------|---------------------|----------------|
+|cardHolder    | JOHN DOE            | Owner Name     |
+|cardNumber    | 0000 0000 0000 0000 | Number         |
+|cardMonth     | 10                  | Month Expire   |
+|cardYear      | 2022                | Year Expire    |
+|cardCVV       | 000                 | CVV Number     |
+|cardIcon      | SVG File            | Icon           |
+|brandIcon     | SVG File            | Brand Icon     |
+|backgroundIcon| PNG File            | BackgroundImage|
 
 
 ## Download
