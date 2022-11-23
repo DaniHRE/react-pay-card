@@ -91,7 +91,7 @@ OBS: Simple Form Card don't have props now. i'll fix it later.
 <SimpleFormCard />
 ```
 
-![](./images/Screenshot_20221123_094147.jpg)
+![](./images/SimpleFormCard.jpg)
 
 ## Props
 
