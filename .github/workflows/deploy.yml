@@ -1,9 +1,11 @@
 name: Deploy
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
+    inputs:
+      release-type:
+        description: 'Release Site?'
+        required: true
 
 jobs:
   build:
