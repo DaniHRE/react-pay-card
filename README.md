@@ -68,6 +68,22 @@ $ npm start
 />
 ```
 
+<details>
+<summary> With change asset props </summary>
+<!--                                  -->
+
+```js
+<Card
+  chipIcon={/* SVG Icon*/}
+  brandIcon={/* SVG Icon*/}
+  backgroundImage={/*PNG, JPEG, etc...*/}
+/>
+```
+
+![Card with change asset props](./images/card.jpg)
+
+</details>
+
 ### Simple Form Card
 
 ```js
