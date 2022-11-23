@@ -36,8 +36,7 @@
 
 ## Demo
 
-To see demonstration site click link bellow.
-- https://danihre.github.io/react-pay-card
+To see demonstration site: https://danihre.github.io/react-pay-card
 
 ## How To Use
 
@@ -54,7 +53,7 @@ $ npm install
 $ npm start
 ```
 
-## Example
+## Examples
 
 ### Card Component
 
@@ -86,9 +85,13 @@ $ npm start
 
 ### Simple Form Card
 
+OBS: Simple Form Card don't have props now. i'll fix it later.
+
 ```js
 <SimpleFormCard />
 ```
+
+![](./images/Screenshot_20221123_094147.jpg)
 
 ## Props
 
@@ -100,18 +103,12 @@ $ npm start
 |cardYear  | 2022                | Card Year Expire  |
 |cardCVV   | 000                 | Card CVV Number   |
 
+
 ## Download
 
 You can [download](https://www.npmjs.com/package/react-pay-card) the latest release package.
 
-## Credits
 
-This software uses the following open source packages:
-
-- [React-Transition Group](http://showdownjs.github.io/showdown/)
-- [React](https://github.com/marketplace)
-- [Typescript](https://github.com/Microsoft/TypeScript)
-- [Sass](https://github.com/sass/dart-sass)
 
 ## Related
 
@@ -121,6 +118,15 @@ This software uses the following open source packages:
 
 - [JS-Nds](https://github.com/danihre/js-nds) - Nintendo DS Emulator 🎮
 - [JSDoom](https://github.com/danihre/jsdoom) - A Playable doom game in js with dosbox api.
+
+## Credits
+
+This software uses the following open source packages:
+
+- [React-Transition Group](http://showdownjs.github.io/showdown/)
+- [React](https://github.com/marketplace)
+- [Typescript](https://github.com/Microsoft/TypeScript)
+- [Sass](https://github.com/sass/dart-sass)
 
 ## License
 
