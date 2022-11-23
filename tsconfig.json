@@ -25,7 +25,7 @@
   ],
   "exclude": [
     "node_modules",
-    "example/*",
-    "example"
+    ".github",
+    "docs"
   ]
 }
