@@ -21,7 +21,7 @@ function App() {
             </div>
           </FullpageSection>
 
-          <FullpageSection>
+          {/* <FullpageSection>
             <div className="center-obj">
               <Form cardMonth={''} cardYear={''} onUpdateState={function (keyName: any, value: any): void {
                 throw new Error('Function not implemented.');
@@ -31,7 +31,7 @@ function App() {
                 throw new Error('Function not implemented.');
               }} children={undefined} />
             </div>
-          </FullpageSection>
+          </FullpageSection> */}
 
           <FullpageSection>
             <SimpleFormCard />
