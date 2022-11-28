@@ -74,13 +74,9 @@ import background from './images/background.png';
 />
 ```
 
-### Simple Form Card
-
-OBS: Simple Form Card don't have props now. i'll fix it later.
-
 <h1 style="background-color: green" align="center">
   <br>
-  CARD COMPONENT
+  FORM COMPONENT
   <br>
   <br>
   <a href="https://github.com/danihre/react-pay-card"><img src="./images/SimpleFormCard.png" alt="React-Pay-Card"></a>
@@ -91,6 +87,8 @@ import { SimpleFormCard } from 'react-pay-card';
 
 <SimpleFormCard />
 ```
+
+OBS: Simple Form Card don't have props now. i'll fix it later.
 
 ## Props
 
