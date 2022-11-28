@@ -52,29 +52,15 @@ $ npm install
 # Run the app
 $ npm start
 ```
+<h1 style="background-color: green" align="center">
+  <br>
+  CARD COMPONENT
+  <br>
+  <br>
+  <a href="https://github.com/danihre/react-pay-card"><img src="https://raw.githubusercontent.com/DaniHRE/react-pay-card/main/images/card.png" alt="React-Pay-Card"></a>
+</h1>
 
-## Examples
-
-### Card Component
-
-```js
-<Card
-  cardHolder={'JOHN DOE'}
-  cardNumber={'5037 0854 0525 5006'}
-  cardMonth={'10'}
-  cardYear={'2022'}
-  cardCvv={'000'}
-/>
-```
-<div style="">
-  <div style="width: 80%">
-    <img src="./images/card.png" />
-  </div>
-</div> <br>
-
-<details>
-<summary> With change asset props </summary>
-<!--                                  -->
+<br>
 
 ```js
 import chip from './images/chipIcon.svg';
@@ -88,21 +74,23 @@ import background from './images/background.png';
 />
 ```
 
-NEED EXAMPLE IMAGE
-
-</details>
-
 ### Simple Form Card
 
 OBS: Simple Form Card don't have props now. i'll fix it later.
+
+<h1 style="background-color: green" align="center">
+  <br>
+  CARD COMPONENT
+  <br>
+  <br>
+  <a href="https://github.com/danihre/react-pay-card"><img src="./images/SimpleFormCard.png" alt="React-Pay-Card"></a>
+</h1>
 
 ```js
 import { SimpleFormCard } from 'react-pay-card';
 
 <SimpleFormCard />
 ```
-
-![SimpleFormCard](./images/SimpleFormCard.png)<br>
 
 ## Props
 
@@ -150,4 +138,3 @@ MIT
 
 > GitHub [@danihre](https://github.com/Danihre) &nbsp;&middot;&nbsp;
 > Instagram [@dani_rod05](https://instagram.com/dani_rod05)
-
