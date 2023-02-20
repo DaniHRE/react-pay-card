@@ -189,8 +189,8 @@ regenerator-runtime@^0.13.10:
   resolved "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.13.10.tgz"
 
 sass@^1.56.1:
-  version "1.58.2"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.58.2.tgz#ef3c5098a02dd006f09a2350b114f1ac445e38ce"
+  version "1.58.3"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.58.3.tgz#2348cc052061ba4f00243a208b09c40e031f270d"
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
     immutable "^4.0.0"
