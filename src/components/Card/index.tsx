@@ -224,7 +224,7 @@ const Card = ({
                                         key={cardMonth}
                                     >
                                         <span>
-                                            {!cardMonth ? 'MM' : (cardMonth.split('').length > 1 ? `0${cardMonth}` : cardMonth)}{' '}
+                                            {!cardMonth ? 'MM' : (cardMonth.split('').length > 1 ? `${cardMonth}` : cardMonth)}{' '}
                                         </span>
                                     </CSSTransition>
                                 </SwitchTransition>
