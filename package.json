@@ -18,7 +18,7 @@
     "build:docs": "cd docs/ && npm run build"
   },
   "dependencies": {
-    "@types/node": "^18.11.9",
+    "@types/node": "^20.0.0",
     "react-transition-group": "^4.4.5",
     "sass": "^1.56.1"
   },
