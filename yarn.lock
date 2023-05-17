@@ -9,8 +9,8 @@
     regenerator-runtime "^0.13.10"
 
 "@types/node@^20.0.0":
-  version "20.1.4"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.1.4.tgz#83f148d2d1f5fe6add4c53358ba00d97fc4cdb71"
+  version "20.1.7"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.1.7.tgz#ce10c802f7731909d0a44ac9888e8b3a9125eb62"
 
 "@types/prop-types@*":
   version "15.7.5"
