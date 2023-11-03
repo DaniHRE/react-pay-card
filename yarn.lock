@@ -9,8 +9,8 @@
     regenerator-runtime "^0.13.10"
 
 "@types/node@^20.0.0":
-  version "20.8.9"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.8.9.tgz#646390b4fab269abce59c308fc286dcd818a2b08"
+  version "20.8.10"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.8.10.tgz#a5448b895c753ae929c26ce85cab557c6d4a365e"
   dependencies:
     undici-types "~5.26.4"
 
