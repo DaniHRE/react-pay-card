@@ -31,8 +31,8 @@
     "@types/react" "*"
 
 "@types/react@*", "@types/react@^18.0.25":
-  version "18.2.51"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.2.51.tgz#01ede6dfc712796257a3443bf8d613149e5c322a"
+  version "18.2.53"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.2.53.tgz#09c21b4621aaad5fed6a5045b33a7430749d8dc5"
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
