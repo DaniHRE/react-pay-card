@@ -128,9 +128,9 @@ This software uses the following open source packages:
 - [Typescript](https://github.com/Microsoft/TypeScript)
 - [Sass](https://github.com/sass/dart-sass)
 
-## License
+## Repo Activity
 
-MIT
+![Alt](https://repobeats.axiom.co/api/embed/3680c06ae0d1cee8c751661d200706f4345dd668.svg "Repobeats analytics image")
 
 ---
 
