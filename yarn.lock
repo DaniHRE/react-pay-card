@@ -9,8 +9,8 @@
     regenerator-runtime "^0.13.10"
 
 "@types/node@^22.0.0":
-  version "22.0.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.0.1.tgz#98e3ed275e511da5b2391bbcbc88caf2831baa1f"
+  version "22.0.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.0.2.tgz#9fb1a2b31970871e8bf696f0e8a40d2e6d2bd04e"
   dependencies:
     undici-types "~6.11.1"
 
