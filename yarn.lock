@@ -79,8 +79,8 @@
     "@parcel/watcher-win32-x64" "2.4.1"
 
 "@types/node@^22.0.0":
-  version "22.7.7"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.7.7.tgz#6cd9541c3dccb4f7e8b141b491443f4a1570e307"
+  version "22.7.9"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.7.9.tgz#2bf2797b5e84702d8262ea2cf843c3c3c880d0e9"
   dependencies:
     undici-types "~6.19.2"
 
