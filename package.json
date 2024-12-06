@@ -23,7 +23,7 @@
     "sass": "^1.56.1"
   },
   "devDependencies": {
-    "@types/react": "^18.0.25",
+    "@types/react": "^19.0.1",
     "@types/react-dom": "^18.0.8",
     "@types/react-transition-group": "^4.4.5",
     "react": "^19.0.0",
