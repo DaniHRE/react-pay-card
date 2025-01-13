@@ -85,8 +85,8 @@
     undici-types "~6.20.0"
 
 "@types/react-dom@^19.0.1":
-  version "19.0.2"
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-19.0.2.tgz#ad21f9a1ee881817995fd3f7fd33659c87e7b1b7"
+  version "19.0.3"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-19.0.3.tgz#0804dfd279a165d5a0ad8b53a5b9e65f338050a4"
 
 "@types/react-transition-group@^4.4.5":
   version "4.4.12"
